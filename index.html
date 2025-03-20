@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IZ Translator</title>
+  </head>
+  <body>
+
+    <h2>1. Start your Webcam</h2>
+    <div class="videos">
+      <span>
+        <h3>Local Stream</h3>
+        <video id="webcamVideo" autoplay playsinline muted="muted"></video>
+      </span>
+      <span>
+        <h3>Remote Stream</h3>
+        <video id="remoteVideo" autoplay playsinline></video>
+      </span>
+    </div>
+      <form>
+        <div class="container">
+          <div id="received-text-container"></div>
+          </div>
+          </form>
+
+
+
+    <h2>1. Select your language</h2>
+
+    <select name="language" id="select-language">
+      <option value="English">English</option>
+      <option value="Spanish">Spanish</option>
+      <option value="French">French</option>
+      <option value="German">German</option>
+      <option value="Italian">Italian</option>
+      <option value="Portuguese">Portuguese</option>
+      <option value="Dutch">Dutch</option>
+      <option value="Polish">Polish</option>
+      <option value="Russian">Russian</option>
+      <option value="Japanese">Japanese</option>
+      <option value="Korean">Korean</option>
+      <option value="Chinese">Chinese</option>
+      <option value="Arabic">Arabic</option>
+      <option value="Hindi">Hindi</option>
+      <option value="Turkish">Turkish</option>
+      <option value="Vietnamese">Vietnamese</option>
+      <option value="Thai">Thai</option>
+      <option value="Swedish">Swedish</option>
+      <option value="Danish">Danish</option>
+      <option value="Finnish">Finnish</option>
+      <option value="Greek">Greek</option>
+      <option value="Hungarian">Hungarian</option>
+      <option value="Indonesian">Indonesian</option>
+      <option value="Norwegian">Norwegian</option>
+      <option value="Slovak">Slovak</option>
+      <option value="Czech">Czech</option>
+      <option value="Romanian">Romanian</option>
+      <option value="Ukrainian">Ukrainian</option>
+      <option value="Bulgarian">Bulgarian</option>
+      <option value="Croatian">Croatian</option>
+      <option value="Catalan">Catalan</option>
+      <option value="Lithuanian">Lithuanian</option>
+      <option value="Slovenian">Slovenian</option>
+      <option value="Estonian">Estonian</option>
+      <option value="Latvian">Latvian</option>
+      <option value="Macedonian">Macedonian</option>
+      <option value="Serbian">Serbian</option>
+      <option value="Bosnian">Bosnian</option>
+    </select>
+
+    <h2>2. Select your Voice </h2>
+    <select name="voice" id="select-voice">
+      <option value="alloy">Alloy</option>
+      <option value="shimmer">Shimmer</option>
+      <option value="echo">Echo</option>
+    </select>
+
+    <h2>3. Start your Webcam</h2>
+    
+
+  
+      <div class="select">
+          <label for="audioSource">Audio input source: </label><select id="audioSource"></select>
+      </div>
+  
+      <div class="select">
+          <label for="audioOutput">Audio output destination: </label><select id="audioOutput"></select>
+      </div>
+  
+      <div class="select">
+          <label for="videoSource">Video source: </label><select id="videoSource"></select>
+      </div>
+
+<br>
+<button id="webcamButton">Start webcam</button>
+    <h2>4. Create a new Call or Join a Call</h2>
+    <button id="callButton" disabled>Create Call (offer)</button>
+
+    <p>Answer the call from a different browser window or device</p>
+    
+    <input id="callInput" />
+    <button id="answerButton" disabled>Answer</button>
+
+    <h2>5. Hangup</h2>
+
+    <button id="hangupButton" disabled>Hangup</button>
+
+    <script type="module" src="src/main.ts"></script>
+
+  </body>
+</html>
