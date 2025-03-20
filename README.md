@@ -1,5 +1,5 @@
-About
----------
+# IZTranslator
+
 This project leverages WebRTC for peer-to-peer calling, but with a twist: instead of hearing your voice in your language, AOAI will record your audio, translate it to your peer's language and output the audio to them. This realtime translation will hopefully make communicating with peers in other languages faster, easier and more natural feeling. 
 
 Preface
